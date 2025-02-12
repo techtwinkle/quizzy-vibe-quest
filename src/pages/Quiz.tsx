@@ -75,7 +75,7 @@ const Quiz = () => {
       }, 1000);
 
       return () => clearInterval(timer);
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && !showResults) {
       handleTimeout();
     }
   }, [timeLeft, showResults]);
